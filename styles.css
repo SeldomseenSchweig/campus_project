@@ -16,7 +16,6 @@ body {
 }
 
 
-
 .nav-container {
   display: flex;
   background: radial-gradient(circle at center, yellow, red);
@@ -44,7 +43,6 @@ ul {
 }
 
 
-/* Style rule set for individual li link */
 .nav-container ul li a {
   font-family: Arial;
   color: black;
@@ -72,6 +70,7 @@ ul {
   font-family: 'raleway', sans-serif;
   font-size: 1rem;
   color: steelblue;
+  margin-top: 10%;
 }
 
 h2 {
@@ -79,7 +78,7 @@ h2 {
 }
 
 p {
-  font-size: calc(2vw + 1vh);
+  font-size: calc(1.5vw + 1vh);
   font-family: "Palatino Linotype", "Book Antiqua", Palatino, serif;
 }
 
@@ -121,4 +120,13 @@ img {
 #events-container {
   display: table;
 
+}
+
+@media only screen and (max-width: 600px) {
+  .nav-container ul {
+    flex-direction: column
+  }
+  .header{
+    margin-top: 40%;
+  }
 }
