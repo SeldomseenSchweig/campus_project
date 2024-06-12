@@ -1,0 +1,100 @@
+html {
+  font-size: 16px;
+  background-color: aliceblue;
+}
+
+@font-face {
+  font-family: 'raleway';
+
+  src: url('assets/Raleway,Roboto/Raleway/static/Raleway-Black.ttf');
+
+}
+
+body {
+  font-size: 1rem;
+  text-align: center;
+}
+
+.header {
+  text-align: center;
+  font-family: 'raleway', sans-serif;
+  font-size: 1rem;
+  color: steelblue;
+}
+
+#navigation {
+  text-align: center;
+  padding: 5px;
+  font-size: 1.2rem;
+  border: 5px solid skyblue;
+  display: inline-block;
+  background: radial-gradient(circle at center, yellow, red)
+}
+
+#navigation a:hover {
+
+  background-color: lightblue;
+  border-radius: 5px;
+
+
+}
+
+#navigation a {
+  padding: 10px 15px;
+  text-decoration: none;
+  color: steelblue;
+  display: inline-block;
+  transition: transform 3s ease, background-color s ease;
+}
+
+navigation,
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+
+
+
+h2 {
+  font-family: 'raleway', Palatino;
+}
+
+a {
+  padding: 25px;
+}
+
+p {
+  font-size: calc(2vw + 1vh);
+  font-family: "Palatino Linotype", "Book Antiqua", Palatino, serif;
+}
+
+img {
+  max-width: 30%
+}
+
+#orgs-container {
+  display: table;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+
+.column {
+  float: left;
+  display: table-cell;
+  /* calc(2vw + 1vh); */
+  height: 235px;
+  width: 33.33%;
+  box-sizing: border-box;
+
+  vertical-align: bottom;
+  padding-bottom: 2%;
+
+}
+
+#events-container {
+  display: table;
+
+}
