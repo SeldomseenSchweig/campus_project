@@ -15,6 +15,58 @@ body {
   text-align: center;
 }
 
+
+
+.nav-container {
+  display: flex;
+  background: radial-gradient(circle at center, yellow, red);
+  flex-direction: row;
+  width: 100%;
+  top: 0;
+  position: fixed;
+
+}
+
+.nav-container,
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: space-evenly;
+
+}
+
+.nav-container ul li {
+  padding: 10px;
+  background-color: lightblue;
+  margin: 10px 2px 10px 5px;
+}
+
+
+/* Style rule set for individual li link */
+.nav-container ul li a {
+  font-family: Arial;
+  color: black;
+  font-size: 16px;
+  text-decoration: none;
+  display: block;
+
+}
+
+
+
+.nav-container a:hover {
+  font-weight: 900;
+  border-radius: 1px;
+}
+
+.nav-container a {
+  text-decoration: none;
+  color: black;
+  transition: transform 3s ease, background-color s ease;
+}
+
 .header {
   text-align: center;
   font-family: 'raleway', sans-serif;
@@ -22,47 +74,8 @@ body {
   color: steelblue;
 }
 
-#navigation {
-  text-align: center;
-  padding: 5px;
-  font-size: 1.2rem;
-  border: 5px solid skyblue;
-  display: inline-block;
-  background: radial-gradient(circle at center, yellow, red)
-}
-
-#navigation a:hover {
-
-  background-color: lightblue;
-  border-radius: 5px;
-
-
-}
-
-#navigation a {
-  padding: 10px 15px;
-  text-decoration: none;
-  color: steelblue;
-  display: inline-block;
-  transition: transform 3s ease, background-color s ease;
-}
-
-navigation,
-ul {
-  list-style-type: none;
-  margin: 0;
-  padding: 0;
-}
-
-
-
-
 h2 {
   font-family: 'raleway', Palatino;
-}
-
-a {
-  padding: 25px;
 }
 
 p {
@@ -74,10 +87,21 @@ img {
   max-width: 30%
 }
 
-#orgs-container {
-  display: table;
+#orgs-container,
+#events-container,
+#news-container {
+  display: flex;
   width: 100%;
   box-sizing: border-box;
+  flex-direction: column;
+}
+
+.orgs,
+.events,
+.news {
+  display: flex;
+  flex-direction: row;
+  justify-content: baseline;
 }
 
 
